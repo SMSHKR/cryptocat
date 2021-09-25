@@ -9,4 +9,4 @@ docker-compose up
 
 | Name             | Description
 |------------------|-------------|
-| `PORT`           | Port the server will listen on (defaults to 80).
+| `PORT`           | Port host will map to (defaults to 80).
