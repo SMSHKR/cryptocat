@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  cryptocat-backend:
+    container_name: backend
+    image: cryptocat-backend
+    build: ./backend
+    environment:
+      NODE_ENV: production
+    networks:
+      - sub-etha
+  cryptocat-frontend:
+    container_name: frontend
+    image: cryptocat-frontend
+    build: ./frontend
+    networks:
+      - sub-etha
+    ports:
+      - ${PORT:-80}:80
+
+networks:
+  sub-etha:
