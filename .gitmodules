@@ -1,0 +1,6 @@
+[submodule "cryptocat-backend"]
+	path = backend
+	url = https://github.com/SMSHKR/cryptocat-backend.git
+[submodule "cryptocat-frontend"]
+	path = frontend
+	url = https://github.com/taninjackie/cryptocat-frontend.git
